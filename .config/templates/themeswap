@@ -1,0 +1,7 @@
+#!/bin/bash
+
+kitty @ set-colors --all --configured ~/.config/kitty/color.conf
+openbox --reconfigure
+pkill dunst && dunst &
+polystart &
+feh --bg-fill {{ wallpaper }}

@@ -1,0 +1,37 @@
+#!/bin/bash
+
+export config=~/.config
+export themes=$config/themes
+export gitconf=~/conf/openboxdots/.config
+export gitmusic=~/conf/music
+
+rm -rf $config/bin && mkdir $config/bin
+ln -s ~/conf/themeswap/load $config/bin/load
+ln -s $gitconf/bin/* $config/bin
+
+rm -rf $themes/wallpapers && mkdir $themes/wallpapers
+ln -s $gitconf/wallpapers/* $themes/wallpapers
+
+rm -rf $themes/templates && mkdir $themes/templates
+ln -s $gitconf/templates/* $themes/templates
+
+rm -rf $themes/documents && mkdir $themes/documents
+ln -s $gitconf/documents/* $themes/documents
+
+rm -rf $config/kitty && mkdir $config/kitty
+ln -s $gitconf/misc/kitty.conf $config/kitty/kitty.conf
+
+# rm -rf $config/mpd && mkdir $config/mpd
+# ln -s $gitmusic/mpd/* $config/mpd
+#
+# rm -rf ~/Music
+# ln -s $gitmusic/music/* ~/Music
+#
+# rm -rf $config/ncmpcpp && mkdir $config/ncmpcpp
+# ln -s $gitmusic/ncmpcpp.conf $config/ncmpcpp/config
+
+rm $themes/config.toml
+ln -s $gitconf/config.toml $themes/config.toml
+
+rm $config/picom.conf
+ln -s $gitconf/misc/picom.conf $config/picom.conf

@@ -1,0 +1,27 @@
+[general]
+name = "slate"
+author = "paracorde"
+
+[style]
+color = [
+  "#ced0d8",
+  "#6596c2",
+  "#d47777",
+  "#c6916b",
+  "#69ad8f",
+  "#7173a8",
+  "#a56c99",
+  "#939bc3",
+  "#c2c4cd",
+  "#547ca1",
+  "#ba5050",
+  "#ae6632",
+  "#2d7757",
+  "#484b91",
+  "#98598a",
+  "#6f7594"
+]
+foreground = "#606060"
+background = "#d5d6db"
+opacity = 1.0
+wallpaper = "~/.config/themes/wallpapers/city.jpg"

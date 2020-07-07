@@ -1,0 +1,61 @@
+configuration{
+  modi: "window,drun,run,ssh";
+  font: "SpaceMono Nerd Font Mono 11";
+  /* drun-display-format: "{icon}"; */
+  show-icons: true;
+  display-drun: "";
+  fullscreen: true;
+}
+
+*{
+  background-color: {{ background }};
+  color: {{ foreground }};
+}
+
+#window {
+  padding: 40px 40px;
+  border: 0px;
+  border-radius: 14px;
+}
+
+listview {
+  columns: 4;
+  padding: 1%;
+  spacing: 2%;
+}
+
+element {
+  orientation: vertical;
+  padding: 2% 2% 2% 3%;
+  color: {{ foreground }};
+  background-color: {{ color[0] }};
+  border: 0 0 3px 0;
+  border-radius: 8px;
+  border-color: {{ color[8] }};
+}
+
+element selected {
+  background-color: {{ color[0] }};
+  border: 0 0 3px 0;
+  border-radius: 8px;
+  border-color: {{ color[1] }};
+}
+
+inputbar {
+  children: [entry];
+  padding: 4px 4px 4px 4px;
+  margin: 8% 30%;
+  background-color: {{ color[0] }};
+  border: 0 0 3px 0;
+  border-radius: 8px;
+  border-color: {{ color[1] }};
+}
+
+prompt {
+  enabled: false;
+}
+
+entry {
+  padding: 8px 12px 8px 12px;
+  background-color: {{ color[0] }};
+}

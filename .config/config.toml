@@ -1,0 +1,11 @@
+[general]
+theme_path = "~/.config/themes/documents"
+script = "bash ~/.config/bin/themeswap"
+
+[generate]
+"~/.config/themes/templates/kitty" = "~/.config/kitty/color.conf"
+"~/.config/themes/templates/openbox" = "~/.config/themes/bonk/openbox-3/themerc"
+"~/.config/themes/templates/dunst" = "~/.config/dunst/dunstrc"
+"~/.config/themes/templates/rofi" = "~/.config/rofi/config.rasi"
+"~/.config/themes/templates/polybar" = "~/.config/polybar/config"
+"~/.config/themes/templates/themeswap" = "~/.config/bin/themeswap"

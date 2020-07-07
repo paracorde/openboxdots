@@ -1,0 +1,27 @@
+[general]
+name = "lights"
+author = "paracorde"
+
+[style]
+color = [
+  "#3c405c",
+  "#f1be9a",
+  "#8aa8c2",
+  "#ed8e8e",
+  "#79bea0",
+  "#8183b3",
+  "#bc85b0",
+  "#606894",
+  "#2c314b",
+  "#ae6632",
+  "#467fb2",
+  "#ba5050",
+  "#2d7757",
+  "#484b91",
+  "#98598a",
+  "#464e7b"
+]
+foreground = "#cacaca"
+background = "#202333"
+opacity = 1.0
+wallpaper = "~/.config/themes/wallpapers/fairylights.jpg"
